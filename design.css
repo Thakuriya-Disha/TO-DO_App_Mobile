@@ -31,6 +31,8 @@ h1{
 }
 .plus i{
     color: #00A5EC;
+    position:relative;
+    top:7px;
 }
 .two{
     font-size:20px;
@@ -40,9 +42,16 @@ h1{
 #new{
     visibility:hidden;
 }
+#new1{
+    visibility:hidden;
+}
+#new2{
+    visibility:hidden;
+}
 .TaskList{
     display:flex;
     justify-content:space-around;
+    margin-top:35px;
 }
 .TaskList a{
     display: block;
@@ -57,7 +66,7 @@ h1{
     height:350px; width:350px;
 }
 .task:hover{
-    filter: drop-shadow(5px 5px 8px grey) drop-shadow(-5px -5px 8px grey);
+    filter: drop-shadow(5px 5px 8px #7B7B7B29) drop-shadow(-5px -5px 8px #7B7B7B29);
 }
 .task h3{
     color:#00A5EC;
@@ -67,38 +76,38 @@ h1{
     color:#EDEDED;
 }
 .place{
-    position:relative;
-    left:55%; top:40px;
+    display:flex;
+    justify-content:space-evenly;
+    margin-left:20px;
 }
-.back{
-    position:relative;
-    left:30%; top:80px;
-    text-decoration: none;
+.place a{
+    text-decoration:none;
 }
-img.three{
-    height:35px;
-    width:35px;
+.place i{
+    margin-top:20px;
+    position:relative;
+    top:7px;
 }
 .four{
     text-decoration: none;
     color:#424242;
-    position:absolute;
-    top:6px;
-    padding-left:10px;
-    font-size:18px;
+    font-size:20px;
+    padding-left:15px;
+}
+.place .two{
+    padding-left:15px;
 }
 .place1{
- margin-left:20%; 
+    padding-top:27px;
 }
 .size1{
-    width:500px;
-    height:350px;
-    box-shadow:3px 3px 7px 7px #67676729;
+    width:500px; height:350px;
+    filter:drop-shadow(5px 5px 15px #7B7B7B29) drop-shadow(-5px -5px 15px #7B7B7B29);
 }
 .size1:hover{
-    filter:none;
+    filter:drop-shadow(5px 5px 15px #7B7B7B29) drop-shadow(-5px -5px 15px #7B7B7B29);
 }
-.size1 h4{
+.size1 h3{
     text-align:center;
 }
 .dark{
@@ -196,7 +205,7 @@ input[type=submit]{
     color:#C2C2C2;
     text-decoration:line-through;
 }
-@media only screen and (min-width:320px) and (max-width:576px){
+@media only screen and (min-width:320px) and (max-width:767px){
     h1{
         padding-left: 200px;
         font-size:5rem;
@@ -220,7 +229,6 @@ input[type=submit]{
     }
     .TaskList{
         flex-direction:column;
-        justify-content:center;
     }
     .task{
         height:950px;
@@ -277,5 +285,141 @@ input[type=submit]{
         position:relative;
         top:90px; left:330px;
         padding:15px;
+    }
+    .place{
+        justify-content:space-between;
+        width:950px;
+        margin-top:70px;
+    }
+    #old1{
+        visibility:hidden;
+    }
+    #old2{
+        visibility:hidden;
+    }
+    #new1{
+        visibility:visible;
+    }
+    #new2{
+        visibility:visible;
+    }
+    .four{
+        font-size:3rem;
+        margin-top:30px;
+    }
+    .tasklist1{
+        margin-top:130px;
+        width:1500px;
+       align-items:stretch;
+    }
+    .size1{
+        width:auto;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1199px){
+    header{
+        width:2500px;
+        font-size:2.5rem;
+    }
+    .plus{
+        justify-content:flex-end;
+        margin-bottom:50px;
+        width:2300px;
+        font-size:2rem;
+    }
+    .two{
+        font-size:2.7rem;
+    }
+    .TaskList{
+        justify-content:flex-start;
+        margin-top:95px;
+    }
+    .task{
+        height:750px;
+        width:726px;
+        font-size:2rem;
+        border-radius:25px;
+    }
+    .task h3{
+        padding-left:80px;
+        font-size:2.5rem;
+    }
+    .task ul{
+        padding-left:80px;
+        font-size:2.4rem;
+    }
+    .fancybox span:before {
+        font-size:75px;
+        margin-right:75px;
+    }
+    .fancybox input[type="checkbox"]:checked ~ span:before {
+        margin-right:75px;
+    }
+    .dark{
+        filter:blur(5px);
+    }
+    .popup{
+        align-items:center;
+        justify-content:center;
+        width:2400px;
+        height:1500px;
+    }
+    .popupbox{
+        height:650px;
+        width:1300px;
+        font-size:2.8rem;
+        border-radius:25px;
+    }
+    .popupbox h3 span{
+        padding-right:760px;
+    }
+    .popupbox h3{
+        padding-left:60px;
+    }
+    input[type=text]{
+        width:1100px; height:80px;
+        font-size:2.8rem;
+        margin-left:45px;
+        margin-top:20px;
+        padding:20px;
+        padding-left:35px;
+    }
+    input[type=submit]{
+        font-size:2.7rem;
+        width:450px;
+        height:120px;
+        border-radius:20px;
+        position:relative;
+        top:90px; left:750px;
+        padding:15px;
+    }
+    .place{
+        justify-content:space-evenly;
+        width:2500px;
+        margin-top:70px;
+    }
+    #old1{
+        visibility:hidden;
+    }
+    #old2{
+        visibility:hidden;
+    }
+    #new1{
+        visibility:visible;
+    }
+    #new2{
+        visibility:visible;
+    }
+    .four{
+        font-size:3rem;
+        margin-top:30px;
+    }
+    .tasklist1{
+        margin-top:150px;
+        width:2500px;
+       justify-content:center;
+    }
+    .size1{
+        width:1000px;
     }
 }
