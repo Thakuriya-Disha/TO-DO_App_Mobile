@@ -102,10 +102,6 @@ h1{
 }
 .size1{
     width:500px; height:350px;
-    filter:drop-shadow(5px 5px 15px #7B7B7B29) drop-shadow(-5px -5px 15px #7B7B7B29);
-}
-.size1:hover{
-    filter:drop-shadow(5px 5px 15px #7B7B7B29) drop-shadow(-5px -5px 15px #7B7B7B29);
 }
 .size1 h3{
     text-align:center;
@@ -205,7 +201,7 @@ input[type=submit]{
     color:#C2C2C2;
     text-decoration:line-through;
 }
-@media only screen and (min-width:320px) and (max-width:767px){
+@media only screen and (min-width:320px) and (max-width:576px){
     h1{
         padding-left: 200px;
         font-size:5rem;
@@ -299,9 +295,11 @@ input[type=submit]{
     }
     #new1{
         visibility:visible;
+        font-size:60px;
     }
     #new2{
         visibility:visible;
+        font-size:120px;
     }
     .four{
         font-size:3rem;
@@ -316,7 +314,7 @@ input[type=submit]{
         width:auto;
     }
 }
-@media only screen and (min-width:768px) and (max-width:1199px){
+@media only screen and (min-width:577px) and (max-width:1000px){
     header{
         width:2500px;
         font-size:2.5rem;
